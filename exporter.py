@@ -19,5 +19,5 @@ export_path = os.path.join(MODEL_DIR, VERSION)  # merge dirs
 
 model.save(export_path, save_format="tf")  # exporting
 
-
+print('saved')
 
