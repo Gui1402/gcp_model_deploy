@@ -9,7 +9,19 @@
   2. Google Cloud SDK
   
 
-Using Makefile you can test your model locally (use make serving-local) or on GCP (use make serving-gcp).
+Using Makefile you can test your model locally: 
+
+```console
+$ make serving-local
+
+```
+
+or on GCP:
+
+```console
+$ make serving-gcp
+
+```
 
 
 If you want to use your own model instead of cats, its just to change MODEL_NAME in make file and Dockerfile.
