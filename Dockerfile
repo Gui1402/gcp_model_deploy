@@ -17,7 +17,7 @@ EXPOSE 8501
 ENV MODEL_BASE_PATH=/models
 
 # The only required piece is the model name in order to differentiate endpoints
-ENV MODEL_NAME=cats
+ENV MODEL_NAME=crack_detect
 
 # Create a script that runs the model server so we can use environment variables
 # while also passing in arguments from the docker command line

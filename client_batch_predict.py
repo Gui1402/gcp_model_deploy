@@ -4,9 +4,9 @@ import requests
 import argparse
 from glob import glob
 
-SERVER_URL = "http://localhost:8501/v1/models/crack_detect:predict"
+#SERVER_URL = "http://localhost:8501/v1/models/crack_detect:predict"
 
-#SERVER_URL = "https://face-compare-o6gqvubbwq-ue.a.run.app/v1/models/compare:predict"
+SERVER_URL = "https://crackdetect-o6gqvubbwq-ue.a.run.app/v1/models/crack_detect:predict"
 
 def encode_img(img_filename: str) -> str:
     with open(img_filename, "rb") as f:
