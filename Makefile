@@ -1,5 +1,5 @@
 serving-local:
-	export MODEL_NAME=cats & export MODEL_PATH="$(pwd)/models/${MODEL_NAME}"
+	export MODEL_NAME=crack_detect & export MODEL_PATH="$(pwd)/models/${MODEL_NAME}"
 	systemctl start docker &
 	sudo docker run -p 8500:8500 -p 8501:8501 -v "${MODEL_PATH}:/models/${MODEL_NAME}" -e MODEL_NAME="${MODEL_NAME}" -t tensorflow/serving:latest
 
